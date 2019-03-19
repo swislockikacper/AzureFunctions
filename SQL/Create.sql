@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS [dbo].[File]
+GO
+
+CREATE TABLE [dbo].[File]
+(
+    [Id] INT PRIMARY KEY NOT NULL IDENTITY,
+    [FileName] NVARCHAR(500) NOT NULL,
+    [Extension] NVARCHAR(100) NOT NULl,
+    [Path] NVARCHAR(500) NOT NULL,
+    [Size] BIGINT NOT NULL
+)
+GO
